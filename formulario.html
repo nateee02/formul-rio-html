@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link  rel = "stylesheet" type = "text/css" href = "formulario.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;800&family=Updock&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+        <title>Formulário - Contatos Profissionais</title>
+    </head>
+
+    <body>
+        <form action = "recebedados.php" method ="get">
+            <fieldset class="grupodedados">
+                <legend class="legenda">Dados Pessoais</legend>
+            <div class="bloco">
+                <label class = "titulo">Nome completo:</label>
+                <input class="caixa"  required type="text" name="nome" placeholder="Obrigatório*">
+            </div>
+                
+            <div class="bloco">
+                <label class = "titulo">Gênero:</label>
+                <label>
+                    <input type="radio" name="genero">
+                    Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero">
+                    Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero">
+                    Outro
+                </label>
+                <label>
+                    <input type="radio" name="genero">
+                    Prefiro não informar
+                </label>
+            </div>
+            
+            <div id="datadenascimento" class="bloco">
+                <label class = "titulo">Data de nascimento:</label>
+                <input class="caixa" type="date" name="data_de_nascimento">
+            </div>
+
+            <div class="bloco">
+                <label class = "titulo">E-mail:</label>
+                <input class="caixa" required type="email" name="email" placeholder="Obrigatório*">
+            </div>
+
+            <div class="bloco">
+                <label class = "titulo">URL de site pessoal:</label>
+                <input class="caixa" type="url" name="url">
+            </div>
+
+            <div class="bloco">
+                <label class="titulo">Endereço</label>
+            <label id="endereço"> 
+                Rua:
+                <input  class="caixa" required type="text" name="rua">
+            </label>
+            <div id="numero">
+            <label>
+                Número:
+                <input class="caixa" required type="number" name="numero">
+            </label>
+            </div>
+            <label>
+                Complemento:
+                <input class="caixa" required type="text" name="complemento">
+            </label>
+            </div>
+
+            <div id="cidade" class="bloco">
+                <label class="titulo">Cidade:</label>
+                <select class="caixa" name="cidades">
+                    <option value=" ">Selecione sua cidade</option>
+                    <option>Alvorada</option>
+                    <option>Canoas</option>
+                    <option>Esteio</option>
+                    <option>Gravataí</option>
+                    <option>Novo Hamburgo</option>
+                    <option>Passo Fundo</option>
+                    <option>Pelotas</option>
+                    <option>Porto Alegre</option>
+                    <option>São Leopoldo</option>
+                </select>
+            </div>
+
+            <div id="telefone"class="bloco">
+                <label class="titulo">Telefone:</label>
+                <input class="caixa" type="tel" name="telefone">
+            </div>
+            </fieldset>
+
+            <fieldset class="grupodedados">
+                <legend>Dados Profissionais</legend>
+
+            <div>
+                <label>Áreas de atuação</label>
+            <div>
+                <label>
+                <input class="selecao" type="checkbox" name="areadeatuacao">
+                Desing
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Desenvolvimento Front-end
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Desenvolvimento Back-end
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Engenharia de Software
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Banco de Dados
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Análise de Testes
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Análise de Negócios
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Análise de Negócios
+                </label>
+            </div>
+            <div class="bloco">
+                <label>
+                <input type="checkbox" name="areadeatuacao">
+                Manutenção
+                </label>
+            </div>
+            </div>
+
+            <div class="bloco">
+                <label>Formação:</label>
+            <div>
+                <input class="caixa" list="cursos" name="formacao">
+            </div>
+                <datalist id="cursos">
+                    <option>Ensino fundamental</option>
+                    <option>Ensino Médio</option>
+                    <option>Ensino Superior</option>
+                    <option>Especialização</option>
+                    <option>Mestrado</option>
+                    <option>Doutorado</option>
+                </datalist>
+            </div>
+            
+            <div class="bloco">
+                <label class = "titulo">Breve histórico profissional:</label>
+                <textarea class="caixa" name="historicoprofissional" placeholder="Trajetória profissional"></textarea>
+            </div>
+
+            <div class="bloco">
+                <label class="titulo">Upload do currículo vitae:</label>
+                <input class="caixa" type="file" name="arquivo">
+            </div>
+
+            <div class="bloco">
+                <label class="titulo">Disponibilidade de horas semanais:</label>
+                <input class="caixa" list="horas" name="horas">
+            </div>
+            <div>
+                <datalist id="horas">
+                    <option>10 horas</option>
+                    <option>20 horas</option>
+                    <option>30 horas</option>
+                    <option>40 horas</option>
+                </datalist>
+            </div>
+            </fieldset>
+
+            <fieldset class="grupodedados">
+                <legend>Agendamento de entrevista</legend>
+
+                <div class="bloco">
+                    <label class="titulo">Data:</label>
+                    <input class="caixa" required type="date" name="data">
+                </div>
+                <div id="horario">
+                    <label class="titulo">Horário:</label>
+                    <input class="caixa" required type="time" name="hora">
+                </div>
+            </fieldset>
+            <button class="botao" name="enviar">ENVIAR</button>
+        </form>
+    </body>
+</html>

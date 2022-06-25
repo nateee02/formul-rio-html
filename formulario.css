@@ -1,0 +1,74 @@
+body{
+    background-color: #FAF9F6;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
+label{
+    color:#01093F;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursiva;
+}
+legend{
+    color: #F0B18E;
+    font-size: 35px;
+    font-family: 'Playfair Display', serifa;
+}
+.bloco{
+    margin-bottom: 18px;
+}
+.titulo{
+    display: block;
+}
+.caixa{
+    border-radius: 4px;
+    border: 1px solid #CFD0DF;
+    box-shadow: 2px 2px 2px #797A8C;
+    display: block;
+    padding: 5px;
+    color: #01093F;
+}
+.caixa:focus{
+    background-color: #CFD0DF;
+}
+.grupodedados{
+    border-radius: 5px;
+    margin: auto;
+}
+.botao{
+    width: 12%;
+    height: 7%;
+    border-radius: 4px;
+    border:#01093F;
+    color: #F0B18E;
+    background-color: #01093F;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursiva;
+}
+.botao:hover{
+    background-color: #F0B18E;
+    color: #01093F;
+}
+#datadenascimento{
+    position: absolute;
+    left:45%;
+}
+#cidade{
+    position: absolute;
+    left: 45%;
+    top: 18.5%;
+}
+#telefone{
+    position: absolute;
+    left: 45%;
+    top: 23.5%;
+}
+#horario{
+    position: absolute;
+    left: 31%;
+    top:91.6%;
+}
+#numero input{
+    width: 8%;
+}
